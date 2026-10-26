@@ -1,0 +1,15 @@
+# Local research inputs and generated outputs
+/work/
+/private/
+/artifacts/
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.dll
+*.exe
+*.pdb
+*.log
+.env
+.env.*
