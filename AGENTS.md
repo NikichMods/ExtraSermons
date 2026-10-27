@@ -19,7 +19,7 @@ Shared host knowledge is owned by [NikichMods/GraveyardKeeperResearch](https://g
 
 `docs/DESIGN.md` owns the exact product scope. Buy a permit through Royal Services for **one additional sermon**, initially **one gold coin** per permit. The fee is provisional. Do not turn this into an unrestricted prayer day, consume/downgrade prayers as an extra charge, replace normal weekly access, or change sermon rewards without explicit agreement.
 
-Permit storage, timing, consumption and persistence semantics are unresolved; do not silently select them as product requirements. Investigate native availability/payment/completion seams before designing production behavior. Do not infer implementation readiness from this bootstrap.
+`docs/DESIGN.md` now owns adopted first-version permit semantics: one non-expiring unused authorization per save, native free sermon first, consume at a valid extra-service start, and a contextual native-looking pulpit with a document indicator rather than a physical inventory item or separate altar/tab. These are product choices, **not** proof of a safe game integration. Exact UI placement/localization, Royal Services insertion, sermon-without-bishop execution, session preservation and coexistence with both PrayerClarity editions remain evidence/acceptance gates. Do not silently revise the adopted rules or infer production readiness from research.
 
 Do not commit game binaries, extracted assets, copied/decompiled game source, saves, private logs or credentials. Use original code and minimal derived evidence.
 
