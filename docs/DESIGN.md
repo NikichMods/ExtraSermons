@@ -28,6 +28,6 @@ Technical research should establish native Royal Services menu/payment ownership
 
 ## Current evidence and next milestone
 
-Only the concept and initial comparison of public mod descriptions are established. No native identifiers, patches, transaction boundary, implementation feasibility, supported host build or runtime compatibility have been verified for Extra Sermons.
+The concept and initial public-mod comparison are established. This research branch's [SERMON_FLOW_RESEARCH.md](SERMON_FLOW_RESEARCH.md) records installed 1.407 static Royal Services/payment, pulpit/calendar, service lifecycle and native per-save carrier evidence. This is not implementation, supported-build/runtime compatibility acceptance, or adoption of the open permit rules above.
 
-The next useful investigation is a bounded review of existing shared host evidence and the native Royal Services/sermon paths. Its purpose is to determine how one paid extra opportunity can coexist with the normal weekly service and which open semantics need a user decision. Production implementation is outside this bootstrap.
+The next step is to choose permit consumption/interruption and ordinary-day semantics using that evidence, then close only the selected menu-insertion and state-preservation seam. Production implementation and game testing require their applicable gates and authorization.
