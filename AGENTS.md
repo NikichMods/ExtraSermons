@@ -7,7 +7,7 @@ This repository follows [NikichMods/DevRules](https://github.com/NikichMods/DevR
 - Product: **Extra Sermons**.
 - Repository: `NikichMods/ExtraSermons`.
 - Target: the original **Graveyard Keeper**, not Graveyard Keeper 2. Shared research currently covers version 1.407; this project's supported game build, platform and loader must be verified before implementation.
-- Current phase: adopted product concept and documentation bootstrap. No implementation, binary, release or runtime acceptance exists.
+- Current phase: adopted product concept plus an explicitly authorized **research-only runtime probe** on `codex/sermon-runtime-probe`. See `docs/SERMON_RUNTIME_PROBE.md`. No production implementation, stable binary/release or runtime acceptance exists.
 
 ## Sources of truth
 
@@ -29,7 +29,9 @@ Do not commit game binaries, extracted assets, copied/decompiled game source, sa
 - Use `codex/<topic>` for research or implementation; unaccepted runtime behavior stays off `main`.
 - Runtime behavior needs explicit acceptance of the identified tested build before stable promotion. Follow DevRules for immutable numbered artifacts and exact source/hash identity.
 - Intended installed filename: `ExtraSermons.dll`; numbered handoff: `ExtraSermons-<version>.dll`. Choose the semantic-version owner with the actual build system before the first binary. Bootstrap consumes no version.
-- GitHub Releases is the intended stable binary download surface. Build tooling and CI are not selected yet.
+- Research version owner: `research/RuntimeProbe/Identity.cs::Version`, derived into assembly/plugin metadata and the numbered filename. The probe uses a separate research GUID and numeric BepInEx version; it is not a stable release.
+- Research handoff gate: clean committed source, `scripts/Build-RuntimeProbe.ps1` Release-equivalent optimized deterministic net471 compilation against installed host/loader references, policy assertions and native metadata/IL contract assertions. Hosted CI independently checks the host-free policy; it cannot compile the actual game integration without proprietary local references. Never upload those references. Exact local source/DLL identity must be recorded before installation.
+- GitHub Releases is the intended stable binary download surface. Production build/release CI remains unselected.
 
 ## Licensing
 

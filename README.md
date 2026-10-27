@@ -6,7 +6,7 @@ Keep the regular weekly service and purchase an extra opportunity when you need 
 
 ## Status
 
-Concept and repository bootstrap only. There is no playable build or release yet.
+The product is not implemented or released. A separate [research runtime probe](docs/SERMON_RUNTIME_PROBE.md) on `codex/sermon-runtime-probe` investigates native additional sermons; it does not implement paid permits or establish runtime acceptance.
 
 The adopted product scope and unresolved mechanics are in [docs/DESIGN.md](docs/DESIGN.md).
 

@@ -2,6 +2,8 @@
 
 Research checkpoint: **2026-10-27**. **Static investigation complete within the scope below; production changes remain BLOCKED.** No game execution, installed probe, production code, build, game/config/plugin/save mutation or release was performed. Sections1–8 preserve the native-flow evidence from `360917f789e83ba8145a3e0d736118d39312f194`; sections9–14 add the contextual pulpit/PrayerClarity investigation. Product status has been reconciled with accepted `main@7422641258aaf27f0f73f9606266c56eed0d1961` instead of retaining superseded open-decision claims.
 
+**Historical boundary:** the statement above describes the completed static investigation at `d360a2e3c3c0d3f1ffbb5a69c1af559d669650c2`. The subsequently authorized experiment and its current build/installation/runtime status are recorded separately in [SERMON_RUNTIME_PROBE.md](SERMON_RUNTIME_PROBE.md). Do not reinterpret the static conclusions below as installed-game results.
+
 **Adopted scope:** one non-expiring, non-inventory authorization per save; free native service first; consumption at valid actual extra-service start, no automatic refund after interruption; same native pulpit/window and compact document indicator. Representation, safety and compatibility still require proof. This branch incorporates the accepted main design/contract while retaining the original research. The only merge conflict was the old DESIGN evidence/next-step paragraph; accepted main's complete DESIGN text was preserved.
 
 ## 1. Question and exact source identity

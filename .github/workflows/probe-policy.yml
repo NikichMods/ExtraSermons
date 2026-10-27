@@ -1,0 +1,22 @@
+name: Research probe policy
+on:
+  push:
+    branches: [codex/sermon-runtime-probe]
+    paths: ['research/RuntimeProbe/**', '.github/workflows/probe-policy.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: probe-policy-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  policy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Test memory-only authorization transitions
+        run: dotnet run --project research/RuntimeProbe/PolicyTests.csproj -c Release
+      # Game/loader assemblies are local references; never upload them or a fake host build.
